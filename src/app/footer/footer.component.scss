@@ -1,0 +1,30 @@
+.bg-footer{
+   background-color: #ff0000d1;
+}
+li{
+    line-height: 2rem;
+}
+.text-size{
+    font-size: 18px;
+    font-weight: 400;
+}
+.row{
+    margin: 0;
+}
+.container-fluid{
+    padding: 0 2%;
+}
+.list-margin-linkls{
+    margin-right: 2.5rem;
+}
+.modal-body{
+    overflow-y:scroll; 
+    position:relative; 
+    text-align: justify;
+    height: 70vh;
+}
+@media (max-width:768px){
+    .list-margin-linkls{
+        margin-right: 2rem;
+    } 
+}

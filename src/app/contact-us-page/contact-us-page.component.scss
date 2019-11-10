@@ -1,0 +1,63 @@
+.qr-bold {
+  font-weight: bold !important;
+}
+
+.qr-green {
+  color: #b11d2b;
+}
+.contact-details p {
+  color: #707070;
+}
+.contact-details h3 {
+  color: #0d4d62;
+}
+.center-small {
+  text-align: inherit;
+}
+.lead {
+  font-size: 1rem;
+}
+/* map */
+.map-margin {
+  margin: 2rem 0;
+}
+.map-responsive {
+  overflow: hidden;
+  padding: 18%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .aboutus .details-about {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .container-fluid {
+    padding: 0px 15%;
+    text-align: center;
+  }
+  .img-width {
+    width: 50%;
+    margin: 5px;
+  }
+  .map-margin {
+    margin: 0rem 0;
+  }
+  .map-responsive {
+    padding: 40%;
+  }
+}
+
+@media (max-width: 580px) {
+  .center-small {
+    text-align: center;
+  }
+}

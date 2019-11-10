@@ -1,0 +1,49 @@
+.feature-title {
+  font-weight: normal;
+  color: #000;
+  margin-bottom: 0;
+}
+.fa {
+  color: #135dc6 !important;
+}
+.content-text {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+}
+.content-text p {
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  width: 80%;
+}
+/* map */
+.map-margin{
+    margin: 2rem 0;
+  }
+  .map-responsive{
+    overflow:hidden;
+    padding:18%;
+    position:relative;
+    height:0;
+  }
+  .map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  
+  @media (max-width:768px){
+      .map-margin{
+        margin: 0rem 0;
+      }
+      .map-responsive{
+        padding:40%;
+      }
+      .content-text p {
+        width: 100%;
+      }
+  }

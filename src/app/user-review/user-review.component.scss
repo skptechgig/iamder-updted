@@ -1,0 +1,23 @@
+.user-review-content{
+  padding: 0 2% 0 10%;
+  width:88%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.testimonial-carousel .testimonial {
+  margin-right: 20%;
+  margin-left: 26%;
+}
+@media (max-width:768px){
+  .testimonial-carousel .testimonial {
+    margin-right: 16%;
+    margin-left: 20%;
+  }
+}
+@media (max-width:540px){
+  .testimonial-carousel .testimonial {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

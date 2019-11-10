@@ -1,0 +1,31 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.qr-img-round {
+  border-radius: 1.5rem;
+}
+.img-width {
+  width: 85%;
+}
+
+
+@media (max-width: 768px) {
+  .aboutus .details-about {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .container-fluid {
+    padding: 0px 15%;
+    text-align: center;
+  }
+  .img-width {
+    width: 50%;
+    margin: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .container-fluid {
+    padding: 0px 1%;
+  }
+}

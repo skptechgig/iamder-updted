@@ -1,0 +1,37 @@
+.why-book-blk {
+    padding: 120px 0 0px;
+}
+.journey-desc {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.fa{
+    color:red;
+}
+.text-header-profile{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.text-right-md{
+    text-align: right;
+}
+.padding-left-2{
+    padding-left: 2rem;
+}
+.padding-content{
+    padding: 0% 6%;
+}
+
+@media screen and (max-width: 768px){
+    .journey-desc {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .text-right-md{
+        text-align: left;
+    }
+    .padding-content{
+        padding: 1% 20%;
+    }
+} 

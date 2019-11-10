@@ -1,0 +1,77 @@
+<div class="container  pt-5">
+	<div class="row contact-details">
+		<div class="col-sm-6 center-small">
+			<h2 class="display-5 qr-green qr-bold mb-5"> Get in touch with us </h2>
+			<h5> Head Office - Bangalore </h5>
+			<p class="lead">
+
+				IAMDER TECHNOLOGIES PRIVATE LIMITED <br>
+				No 332/386, C2,Davana, <br>
+				5th Main Vijaya Bank Layout,<br>
+				Belekahalli Bangalore<br>
+				Bangalore Karnataka 560076 IN <br>
+			</p>
+			<h5 class="mt-5"> Call us at </h5>
+			<p class="lead"> 09538766073 </p>
+			<h5 class="mt-5"> Mail Us at </h5>
+			<p class="lead">
+				<a href="contact@iamder.com"> contact@iamder.com </a> <br>
+			</p>
+		</div>
+		<div class="col-sm-6 pt-2 mb-5 ">
+			<h3 class="pl-3 text-center"> Leave us a message </h3>
+			<form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+				<div class="form-group">
+					<label for="firstName">First Name</label>
+					<input type="text" class="form-control" name="firstName" [(ngModel)]="model.firstName"
+						#firstName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && firstName.invalid }" required />
+					<div *ngIf="f.submitted && firstName.invalid" class="invalid-feedback">
+						<div *ngIf="firstName.errors.required">First Name is required</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="lastName">Last Name</label>
+					<input type="text" class="form-control" name="lastName" [(ngModel)]="model.lastName"
+						#lastName="ngModel" [ngClass]="{ 'is-invalid': f.submitted && lastName.invalid }" required />
+					<div *ngIf="f.submitted && lastName.invalid" class="invalid-feedback">
+						<div *ngIf="lastName.errors.required">Last Name is required</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel"
+						[ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+					<div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+						<div *ngIf="email.errors.required">Email is required</div>
+						<div *ngIf="email.errors.email">Email must be a valid email address</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="phone no">Phone Number</label>
+					<input type="number" class="form-control" name="phone" [(ngModel)]="model.phone" #phone="ngModel"
+						[ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" required maxlength="10" />
+					<div *ngIf="f.submitted && phone.invalid" class="invalid-feedback">
+						<div *ngIf="email.errors.required">Phone is required</div>
+						<div *ngIf="email.errors.maxlength">Phone must be a 10 number</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+			<span class="fileError"></span>
+		</div>
+	</div>
+</div>
+
+
+<!-- map -->
+<div class="map-margin feature-title">
+	<h2 class="h2-responsive text-center" style="padding-bottom: 1.5rem;"> Find Us in Maps </h2>
+	<div class="map-responsive col-md-8 offset-md-2">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.649805290296!2d77.62136171482159!3d12.930214890883075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU1JzQ4LjgiTiA3N8KwMzcnMjQuOCJF!5e0!3m2!1sen!2sin!4v1570011755559!5m2!1sen!2sin"
+			width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+</div>

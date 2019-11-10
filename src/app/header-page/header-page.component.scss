@@ -1,0 +1,137 @@
+/* custom css */
+/* links > ul > li {
+    margin: 0 4rem; 
+    color: #ff0000d1;
+}
+::ng-deep .navCss nav
+{
+  background-color: #ff0000d1 !important;
+}
+
+.nav-link{
+  font-size: 20px;
+}
+.img-andriod{
+    height: 40px;
+}
+
+.intro-header {
+    height: unset !important;
+  }
+  .intro-2 {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img%20(42).jpg")no-repeat center center;
+    background-size: cover;
+  }
+  .view {
+    height: 80vh !important;
+  }
+  .top-nav-collapse {
+    background-color: #3f51b5 !important;
+  }
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background: #3f51b5 !important;
+    }
+  }
+  .rgba-gradient .full-bg-img {
+    background: linear-gradient(45deg, rgba(83, 125, 210, 0.4), rgba(178, 30, 123, 0.4) 100%);
+  }
+  .full-bg-img {
+    height: 100%;
+  }
+  .card {
+    background-color: rgba(229, 228, 255, 0.2);
+  }
+  
+  .md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .md-form label {
+    color: #ffffff;
+  }
+  h6 {
+    line-height: 1.7;
+  }
+  @media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+      height: 1040px;
+    }
+  } */
+.navbar {
+  padding: 0.3rem;
+}
+::ng-deep .carousel-item {
+  height: 75vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+img {
+  height: 20px;
+  padding-right: 5px;
+}
+.btn[class*="btn-outline-"] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.btn {
+  text-transform: none;
+  padding: 0.84rem 1rem;
+}
+.btn-outline-white {
+  border: 1px solid #fff !important;
+  /*  background-color: #00000085!important; */
+}
+.carousel-control.left,
+.carousel-control.right {
+  left: 0;
+  z-index: 1;
+}
+.carosel-img-header {
+  border-radius: 50%;
+  height: 150px;
+  width: 200px;
+}
+.container-img {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: auto;
+}
+.container__inner-img {
+  margin: 0px 10px;
+  display: block;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 85vh;
+    min-height: 350px;
+  }
+  .carosel-img-header {
+    height: 161px;
+    width: 188px;
+  }
+}
+
+@media (max-width: 480px){
+  .container__inner-img {
+    margin: 0px 0px;
+  }
+}
