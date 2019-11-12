@@ -1,6 +1,6 @@
 .aboutus{
     margin: 0px;
-    padding:6rem 3rem 4rem 3rem ;
+    padding:2rem 2rem 2rem 3rem ;
     width:100%;
     .center {
         text-align: center;
@@ -56,4 +56,14 @@
     .container-fluid {
         padding: 0px 1%;
     }
-}
+}.img-fit {
+    margin: 0 8% 4% 0%;
+    max-width: 84% !important;
+  }
+  
+  @media (max-width: 768px) {
+    .img-fit {
+      margin: 4%;
+      max-width: 92%;
+    }
+  }

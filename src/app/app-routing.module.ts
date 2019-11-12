@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { OurJourneyComponent } from './our-journey/our-journey.component';
 import { AboutusPageComponent } from './aboutus-page/aboutus-page.component';
+import {UserStoriesComponent}  from './user-stories/user-stories.component'
 
 const routes: Routes = [
   { path:'', component: OurJourneyComponent },
