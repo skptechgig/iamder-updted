@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutusPageComponent } from './aboutus-page/aboutus-page.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { PrivacyModalComponent } from './privacy-modal/privacy-modal.component';
+import  {UserStoriesComponent} from './user-stories/user-stories.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PrivacyModalComponent } from './privacy-modal/privacy-modal.component';
     FooterComponent,
     AboutusPageComponent,
     ContactUsPageComponent,
-    PrivacyModalComponent
+    PrivacyModalComponent,
+    UserStoriesComponent
   ],
   imports: [
     BrowserModule,
