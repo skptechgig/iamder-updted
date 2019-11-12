@@ -1,3 +1,7 @@
+.img-fit{
+    height: 75vh !important;
+    width: 100%;
+}
 .aboutus{
     margin: 0px;
     padding:2rem 2rem 2rem 3rem ;
@@ -56,14 +60,7 @@
     .container-fluid {
         padding: 0px 1%;
     }
-}.img-fit {
-    margin: 0 8% 4% 0%;
-    max-width: 84% !important;
-  }
+}
   
   @media (max-width: 768px) {
-    .img-fit {
-      margin: 4%;
-      max-width: 92%;
-    }
   }

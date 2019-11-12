@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UserDetailsService } from '../services/user-details.service';
+import { HttpClient, HttpHeaders  } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-our-journey',
@@ -7,10 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurJourneyComponent implements OnInit {
 
-  constructor() { }
+  productData: any;
+  constructor(private userDetails:UserDetailsService, private _http:HttpClient) { }
 
   ngOnInit() {
     window.scroll(0,0);
+    this.getProductDetails();
+    
   }
 
+  getProductDetails(){
+    return this.userDetails.getProductStatus().subscribe(res => {
+      this.productData = res;
+      console.log(JSON.stringify(this.productData));
+    })
+  }
 }

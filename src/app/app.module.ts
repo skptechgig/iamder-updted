@@ -3,6 +3,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { NgxSmartModalModule } from 'ngx-smart-modal';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +37,7 @@ import  {UserStoriesComponent} from './user-stories/user-stories.component'
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot(),
     NgxSmartModalModule.forRoot(),
     AppRoutingModule
