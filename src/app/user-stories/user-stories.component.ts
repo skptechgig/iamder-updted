@@ -13,12 +13,13 @@ export class UserStoriesComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0,0);
+    this.getUserStories();
   }
 
   getUserStories(){
     return this.userService.getProfileData().subscribe(res => {
       this.userData = res;
-      console.log(JSON.stringify(this.userData));
+      console.log(JSON.stringify(this.userData.content));
     })
   }
 

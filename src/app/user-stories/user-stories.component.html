@@ -1,12 +1,13 @@
 
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" style="background-color: #a9a9a959;">
-      <div class="carousel-item active">
-        <div class="mt-2">
-          <h2 class="h2-responsive text-center">User Stories</h2>
+      <div class="carousel-item" *ngFor="let user of userData; let i = index" [ngClass]="{'active': i==0}">
+        <div class="mt-2" >
+          <h2 class="h2-responsive text-center color-red">{{user.content.profile_title}}</h2>
           <div class="text-center mt-2">
-            <img src="../../assets/baby-groot.jpg" class="carosel-img-header img-responsive" alt="...">
-            <figcaption>Name of the user</figcaption>
+            <img src="../../assets/groot.jpg" class="carosel-img-header img-responsive" alt="...">
+           <!--  <figcaption>{{user.content.user_name}}</figcaption> -->
+            <p class="h5-responsive">{{user.content?.short_description}}</p>
           </div>
           <div class="container-img mt-3">
             <div class="container__inner-img">
@@ -26,22 +27,22 @@
           <div class="row mt-4">
             <div class="col-md-6 text-center">
               <h4 class="h4-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Calls Till-Now: 100+ Users</h4>
+                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Calls: {{user.content.calls_count}}+</h4>
             </div>
             <div class="col-md-6 text-center">
               <h4 class="h4-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Rate: $2/5Min</h4>
+                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Charges: {{user.content.default_currency}} {{user.content.default_price}}/Min</h4>
             </div>
           </div>
 
           <div class="text-center mt-4">
-            <h5 class="h5-responsive"> User Ratings: <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+            <h5 class="h5-responsive">Rating: <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
                 aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
                 aria-hidden="true"></i></h5>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <div class="mt-2">
           <h2 class="h2-responsive text-center">User Stories</h2>
           <div class="text-center mt-2">
@@ -66,11 +67,11 @@
           <div class="row mt-4">
             <div class="col-md-6 text-center">
               <h4 class="h4-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Calls Till-Now: 100+ Users</h4>
+                 Calls Till-Now: 100+ Users</h4>
             </div>
             <div class="col-md-6 text-center">
               <h4 class="h4-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Rate: $2/5Min</h4>
+                 Rate: $2/5Min</h4>
             </div>
           </div>
 
@@ -106,11 +107,11 @@
           <div class="row mt-4">
             <div class="col-md-6 text-center">
               <h3 class="h3-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Calls Till-Now 100+ Users</h3>
+                 Calls Till-Now 100+ Users</h3>
             </div>
             <div class="col-md-6 text-center">
               <h3 class="h3-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Rate $2/5Min</h3>
+                 Rate $2/5Min</h3>
             </div>
           </div>
 
@@ -120,7 +121,7 @@
                 aria-hidden="true"></i></h5>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
