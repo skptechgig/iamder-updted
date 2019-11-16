@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UserDetailsService } from '../services/user-details.service';
-import { HttpClient, HttpHeaders  } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -10,19 +9,19 @@ import { map } from 'rxjs/operators';
 })
 export class OurJourneyComponent implements OnInit {
 
-  productData: any;
-  constructor(private userDetails:UserDetailsService, private _http:HttpClient) { }
+  productData:any;
+  constructor(private userDetails: UserDetailsService) { }
 
   ngOnInit() {
-    window.scroll(0,0);
+    window.scroll(0, 0);
     this.getProductDetails();
-    
+
   }
 
-  getProductDetails(){
+  getProductDetails() {
     return this.userDetails.getProductStatus().subscribe(res => {
       this.productData = res;
-      console.log(JSON.stringify(this.productData));
+      /* console.log(JSON.stringify(this.productData)); */
     })
   }
 }
