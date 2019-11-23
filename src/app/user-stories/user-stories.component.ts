@@ -19,7 +19,7 @@ export class UserStoriesComponent implements OnInit {
   getUserStories(){
     return this.userService.getProfileData().subscribe(res => {
       this.userData = res;
-      console.log(JSON.stringify(this.userData.content));
+    
     })
   }
 

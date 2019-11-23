@@ -5,33 +5,41 @@
         <div class="mt-2" >
           <h2 class="h2-responsive text-center color-red">{{user.content.profile_title}}</h2>
           <div class="text-center mt-2">
-            <img src="../../assets/groot.jpg" class="carosel-img-header img-responsive" alt="...">
+          <img src="{{user.content?.profile_url_icon_icon1}}.jpg" 
+          onerror="this.src='../../assets/default_icon.png'" class="carosel-img-header img-responsive" alt="...">
            <!--  <figcaption>{{user.content.user_name}}</figcaption> -->
             <p class="h5-responsive">{{user.content?.short_description}}</p>
           </div>
+
+        <div>
+          
           <div class="container-img mt-3">
             <div class="container__inner-img">
-              <img src="../../assets/for-your-org.jpg" class="carosel-img-header img-responsive" alt="...">
+              <img src="{{user.content?.profile_url_graphics_image1}}.jpg" 
+              onerror="this.src='../../assets/default_icon.png'" class="carosel-img-header img-responsive" alt="...">
             </div>
             <div class="container__inner-img">
-              <img src="../../assets/groot.jpg" class="carosel-img-header img-responsive" alt="...">
+              <img src="{{user.content?.profile_url_graphics_image2}}.jpg" 
+              onerror="this.src='../../assets/default_icon.png'" class="carosel-img-header img-responsive" alt="...">
             </div>
             <div class="container__inner-img">
-              <img src="../../assets/groot1.jpg" class="carosel-img-header img-responsive" alt="...">
+              <img src="{{user.content?.profile_url_graphics_image3}}.jpg" 
+              onerror="this.src='../../assets/default_icon.png'" class="carosel-img-header img-responsive" alt="...">
             </div>
             <div class="container__inner-img">
-              <img src="../../assets/for-your-org.jpg" class="carosel-img-header img-responsive" alt="...">
+              <img src="{{user.content?.profile_url_graphics_image4}}.jpg" 
+              onerror="this.src='../../assets/default_icon.png'" class="carosel-img-header img-responsive" alt="...">
             </div>
           </div>
 
           <div class="row mt-4">
             <div class="col-md-6 text-center">
               <h4 class="h4-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Calls: {{user.content.calls_count}}+</h4>
+                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Calls: {{user.calls_count}}+</h4>
             </div>
             <div class="col-md-6 text-center">
               <h4 class="h4-responsive">
-                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Charges: {{user.content.default_currency}} {{user.content.default_price}}/Min</h4>
+                <!-- <i class="fa fa-phone fa-2x" title="Calls"></i> &nbsp; --> Charges:INR {{user.content.default_price}}/Min</h4>
             </div>
           </div>
 
@@ -42,6 +50,8 @@
           </div>
         </div>
       </div>
+
+     
       <!-- <div class="carousel-item">
         <div class="mt-2">
           <h2 class="h2-responsive text-center">User Stories</h2>
