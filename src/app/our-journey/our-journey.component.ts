@@ -21,7 +21,7 @@ export class OurJourneyComponent implements OnInit {
   getProductDetails() {
     return this.userDetails.getProductStatus().subscribe(res => {
       this.productData = res;
-      /* console.log(JSON.stringify(this.productData)); */
+       //console.log(JSON.stringify(this.productData)); 
     })
   }
 }

@@ -10,6 +10,7 @@ export class UserDetailsService {
   
   product_satus = "https://www.iamder.com/product_stats.json";
   profile_url  = "https://www.iamder.com/top_profiles.json";
+  //profile_url="https://www.iamder.com/top_profiles.json"
   terms_and_condition_url="https://www.iamder.com/terms_and_conditions.txt";
   privacy_policy_url="https://www.iamder.com/privacy_policy.txt"
   

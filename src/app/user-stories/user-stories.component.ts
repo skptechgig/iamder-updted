@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserDetailsService } from '../services/user-details.service';
 
+
+
 @Component({
   selector: 'app-user-stories',
   templateUrl: './user-stories.component.html',
@@ -19,7 +21,8 @@ export class UserStoriesComponent implements OnInit {
   getUserStories(){
     return this.userService.getProfileData().subscribe(res => {
       this.userData = res;
-    
+      //console.log(JSON.stringify(this.userData)); 
+
     })
   }
 

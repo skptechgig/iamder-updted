@@ -135,3 +135,30 @@ div {
 	
 }
 }
+
+.container-about {
+    background: url(../../assets/about_us.png) no-repeat top center ;
+    background-size: cover;
+    color: #fff;
+    height: 500px;
+}
+.container-about h1 {
+    margin-top: 10rem;
+    text-shadow: 2px 2px 2px #000;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size-adjust: 5em;
+}
+.container .row h1{
+    font: 500 40px/ 46px 'Nunito', sans-serif !important;
+    width: 95%;
+    min-width: 400px;
+}
+.mb-5, .my-5 {
+    margin-bottom: 0rem !important;
+}
